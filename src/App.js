@@ -7,7 +7,7 @@ function App() {
         const data = await axios.get("https://api.spacexdata.com/v4/launches/upcoming")
        var mydata = data.data
     setMyList(mydata)
-    console.log(data.data)
+    console.log(typeof data.data)
     }
     useEffect(function(){ 
         ABC();
